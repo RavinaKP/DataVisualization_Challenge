@@ -1,0 +1,36 @@
+# Pymaceuticals data given
+# Mouse Meta Data & Study Result
+# Mouse data with mouse info like ID, Drug Regimen, Sex, Age_Months, Weight_g
+# Study results with Mouse ID, Timepoint, Tumor Volume, Metastatic Sites
+# Step 1 : Merge two tables with reference to Mouse ID
+# Step 2 : There are 249 unique Mouse ID 
+# Data review and check for duplicate data
+# Step 3 : Check data duplication by Mouse ID and Timepoint
+Found index # 107 & 137 are duplicates.
+# Step 4 : Delete the duplicate from a data frame.
+# Step 5 : verify the clean data frame. Now 248 Mouse Id.
+# Step 6 : Summary Table Group by 10 different Drug Regimen
+# Step 7 : mean, median, variance, standard deviation, and SEM of the tumour volume
+# Step 8 : Plot the bar chat that shows the Drug Regimen by the Number of Observed Mouse Time points (Number of mice per Drug Regimen) 
+# Capomulin and Ramicane perform on over 200 Mices and Propriva less than 150 Mices. Rest of the treatment was on less than 200 Mices.
+# Step 9 : Mouse bifurcation by Sex.
+Total of 1880 Mices data is there. 49% Female and 51% Male Mices
+# Now analysis get narrowed down and focused on treatment Regimes as below.
+ Capomulin, Ramicane, Infubinol, and Ceftamin
+# Step 1: Short the data by highest timepoint
+# Step 2 : Reset of index
+# Step 3: Merge Reset data with clean data fare (data after removing duplicates)
+# Step 4: Create a list of 4 treatments on which further analysis has been done.
+# Step 5: Create the empty list to add mice data for the above list.
+# Step 6 : Apply for loop to add Tumor Volume data into an empty list.
+# Step 7 : Append data into an empty list.
+# Step 8 : Apply the IQR to find out the outlier
+Found one outlier for Infubinol. rest of the treatment have no outlier. 
+# For further analysis
+# take I509 as a refernce to see Tumor volume by days
+# Graph presents 0 to 20 days Tumor Volume get increased until 20 days. After that Sudden drop and again a little increment and again a drop of around
+40 points. In nutshell. After the Capomulin treatment, there is a decrement in tumor volume.
+# Try to find a correlation between Mouse Weight and Tumor Volume
+# Graph presents a positive correlation between Tumor volume and weight. The value is 0.84 which shows a strong correlation. 
+# Liner question is 0.95x = 21.55 to show a correlation between weight and tumor volume. Higher the weight chances are high of higher tumor volume.
+
